@@ -80,32 +80,116 @@ header{
     align-items: center;
     justify-content: center;
 }
-.head__logo-right{
-    width: 30rem;
-    height: 5rem;
-    padding: 1rem;
-}
-
-.head__logo-right img{
-    width: 100%;
-    height: 100%;
-}
-
-.head__logo-left{
-    transform: scale(-1, 1);
-    width: 30rem;
-    height: 5rem;
-    padding: 1rem;
-}
-
-.head__logo-left img{
-    width: 100%;
-    height: 100%;
-}
 
 .head__logo-center{
     font-size: 4.8rem;
     text-transform: uppercase;
     font-weight: 500;
-    padding-bottom: 2.5rem;
+}
+
+.head__logo-center::before{
+    position: relative;
+    content: '</';
+    color: #000;
+    font-size: 5.8rem;
+    left: 0rem;
+    top: .5rem;
+}
+
+.head__logo-center::after{
+    position: relative;
+    content: '>';
+    color: #000;
+    font-size: 5.8rem;
+    left: 1rem;
+}
+
+.card__wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+}
+
+.card__name{
+    width: 50rem;
+    height: 20rem;
+    background-color: #fff;
+}
+
+.card__brief { 
+    grid-area: 1 / 1 / 2 / 3; 
+    background-color: #fff;
+}
+
+.card__brief-wrap{ 
+    display: flex;
+}
+
+.card__brief-img{
+    width: 35rem;
+    height: 25rem;
+    padding: 1rem;
+}
+
+.card__brief-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.card__brief-info{
+    width: 100%;
+    padding-right: 2rem;
+}
+.card__brief-title{
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: rgba(34, 60, 80, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card__brief-description{
+    font-size: 2.2rem;
+    padding: 0rem 1rem 1rem 1rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
+
+.card__skills { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: #fff;
+}
+.card__code { 
+    grid-area: 1 / 4 / 2 / 5; 
+    background-color: #fff;
+}
+.card__experience { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: #fff;
+}
+.card__education { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: #fff;
+}
+.card__contacts { 
+    grid-area: 2 / 3 / 3 / 4; 
+    background-color: #fff;
+}
+.card__language { 
+    grid-area: 2 / 4 / 3 / 5; 
+    background-color: #fff;
+}
+
+.card{
+    padding-top: 5rem;
+    background-color:rgba(34, 60, 80, 0.08);
+}
+
+.head{
+    background-color: rgba(34, 60, 80, 0.08);
 }
