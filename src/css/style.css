@@ -1,0 +1,111 @@
+html, body{
+    font-size: 0.625vw;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    background-color: #ffff;
+    height: 14rem;
+    -webkit-box-shadow: 0px -10px 21px 8px rgba(34, 60, 80, 0.08) inset;
+    -moz-box-shadow: 0px -10px 21px 8px rgba(34, 60, 80, 0.08) inset;
+    box-shadow: 0px -10px 21px 8px rgba(34, 60, 80, 0.08) inset;
+}
+.header__wrap{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo-name{
+    font-size: 2.4rem;
+    max-width: 15rem;
+}
+
+.header__logo-link{
+    color: #000;
+    text-decoration: none;
+}
+
+.header__logo-wrap{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__logo-img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.header__logo-img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__navigation{
+    display: flex;
+}
+
+.header__navigation-list{
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.header__navigation-item{
+    list-style: none;
+    text-decoration: none;
+}
+
+.header__navigation-link{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+.head__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head__logo-right{
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.head__logo-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.head__logo-left{
+    transform: scale(-1, 1);
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+}
+
+.head__logo-left img{
+    width: 100%;
+    height: 100%;
+}
+
+.head__logo-center{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 2.5rem;
+}
