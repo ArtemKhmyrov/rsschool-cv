@@ -608,9 +608,19 @@ table.paleBlueRows tr:nth-child(even) {
     align-items: center;
     justify-content: center;
     font-size: 2.2rem;
-    
 }
 
 .rsschool{
     fill: #000;
+}
+
+.card__code-link{
+    list-style: none;
+    text-decoration: none;
+    color: blue;
+}
+
+.card__code-info{
+    display: flex;
+    flex-direction: column;
 }
